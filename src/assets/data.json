@@ -1,0 +1,48 @@
+{
+    "customers": [
+      {
+        "id": 1,
+        "firstName": "Ted",
+        "lastName": "James",
+        "address": "1234 Anywhere St.",
+        "city": "Phoenix",
+        "state": "Arizona",
+       "orderTotal": 207.98,
+        "orders": [
+          {
+            "id": 1,
+            "product": "Basketball",
+            "price": 7.99
+          },
+          {
+            "id": 2,
+            "product": "Shoes",
+            "price": 199.99
+            
+          }
+        ]
+       
+      },
+      {
+        "id": 2,
+        "firstName": "Michelle",
+        "lastName": "Thompson",
+        "address": "345 Cedar Point Ave.",
+        "city": "Encinitas",
+        "state": "California",
+        "orderTotal": 8.98,
+        "orders": [
+          {
+            "id": 1,
+            "product": "Frisbee",
+            "price": 2.99
+          },
+          {
+            "id": 2,
+            "product": "Hat",
+            "price": 5.99
+          }
+        ]
+      }
+    ]
+  }

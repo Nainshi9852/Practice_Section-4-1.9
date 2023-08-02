@@ -1,0 +1,15 @@
+<h2><i class="fa fa-lock fa-1x"></i> Login</h2>
+
+<form #loginForm="ngForm" (ngSubmit)="submitForm(loginForm)">
+  <div>
+    <label class="email">Email:</label>
+    <input type="email" name="email" [(ngModel)]="email" required>
+  </div>
+  <div>
+    
+    <label>Password:</label>
+    <input type="password" name="password" [(ngModel)]="password" required>
+  </div>
+  
+  <button type="submit" [disabled]="!loginForm.valid">Login</button>
+</form>

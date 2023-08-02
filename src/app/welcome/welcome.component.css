@@ -1,0 +1,35 @@
+.container-fluid {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+  }
+  
+  .col-2 h4 {
+    margin-right: 10px;
+  }
+  
+  .col-2 i {
+    margin-left: 20px;
+  }
+  
+  .col-10 a {
+    margin-right: 50px;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  .col-10 a.router-link-active {
+    background-color: lightblue;
+    border-radius: 5px;
+  }
+  
+  .col-10 a:hover {
+    background-color: lightgray;
+    color: black;
+  }

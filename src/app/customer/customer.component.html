@@ -1,0 +1,17 @@
+<input type="text" [(ngModel)]="filterText" placeholder="Filter customers" (input)="applyFilter()"><br>
+
+
+
+<!-- Display customers in card view -->
+<div class="card-view">
+    <div class="customer-card" *ngFor="let customer of customers filter:filterText">
+      <!-- Display customer details here -->
+      <h3>{{ customer.firstName }} {{ customer.lastName }}</h3>
+      <p>{{ customer.address }}</p>
+      <p>{{ customer.city }}, {{ customer.state }}</p>
+      <p>Order Total: ${{ customer.orderTotal }}</p>
+      
+      <!-- Button to view orders -->
+      <button (click)="viewOrders(customer.id)">View Orders</button>
+    </div>
+  </div>

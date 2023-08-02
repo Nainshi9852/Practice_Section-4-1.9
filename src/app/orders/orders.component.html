@@ -1,0 +1,11 @@
+
+<!-- Display customer orders -->
+
+<div class="orders-list">
+    <div class="order" *ngFor="let order of customerOrders">
+      <!-- Display order details here -->
+      <h4>{{ order.product }}</h4>
+      <p>Price: ${{ order.price }}</p>
+    </div>
+  </div>
+  
